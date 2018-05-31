@@ -39,15 +39,15 @@ def parse(url):
         
         print('p ', category)
         publisher = h.xpath('//h2[@class="product-header__identity product-header__identity--app-header product-header__identity--spaced"]/a/text()')
-        print 'p',publisher
+        #print 'p',publisher
         rating = h.xpath('//figcaption[@class="we-rating-count star-rating__count"]/text()')
         star_rating = "".join(rating).split(',')[0]
-        print "s", star_rating
+        #print "s", star_rating
         of_rating = "".join(rating).split(',')[-1]
-        print 'o',of_rating
+        #print 'o',of_rating
         reviews = "".join(h.xpath('//div[@class="we-clamp we-clamp--lines-6 ember-view"]/span/text()'))
         version = "".join(h.xpath('//p[@class="l-column small-6 medium-12 whats-new__latest__version"]/text()'))
-        print 've',version
+        #print 've',version
         
         
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+1, "".join(category))
@@ -58,7 +58,7 @@ def parse(url):
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+4, "".join(of_rating))
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+5, "".join(version))
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+6, "".join(reviews))
-        print 'DONE!'
+        print('DONE!')
         #print type(all_cells[cells]),all_cells[cells].row,all_cells[cells].col,all_cells[cells].value
     #print 't1',type(all_cells)," t2 ",type(all_cells2)
     #for cells in range(len(all_cells)):
