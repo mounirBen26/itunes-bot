@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "itunes-bot",
+  "private_key_id": "7b5170b5df0c29bb0f07342d9b3055ab3641a4cd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjAURaFf1eOnt4\nVLFgU33l7uoc9fYmqa8/2x2qn012WbuFfmQZCn2anAdajIF3JCX/Sg61+Oxv4rZm\njInL529oFBbz/jBP7Bi5CJ5xQw7f6+YaOrbLfBwjUuahRgSP6XWbFlXqCvgXyFbu\nsi/+eJvvPqA+GMGzZ6gOrePz4xuBYv4PeVQ1izWo3d4Z4ivzfmPyR1De5aGYlKkS\nA6Mrq2Myca3zTQoOCvN1FXExiU2ZqWR/hy+GVjXTrTv2xR8EEzDdYKK6h+FRdI59\nw1irL/IYAk1yE5UFHMIYPj0oryBNbIozTHdieELPQ5Horm1Fge/KCCx+JGQMQgbC\nRSTsZH1LAgMBAAECggEAHEalfT0QSQ67CVojtNJ25fKGUQTHsNhBisGvSUA+Fzgk\no9kTcxaTSEUlr2rtMGYoYzsNBzsJhLUer/ZUFvdsJ3FItAWVit+pQDvDBGG+DFDn\nBwjFWdILLYN9d19mfjJg0MjUmXdSpwl9LwXg9nMklaFW+b6gp0bla7p1bwKn7E8h\nLjGlD3XIEJT1i8Yuh6nnI1m7DNJ45mzJ3kA8MMgDqLXM+qSt2HG1Ec0lMCxcrsch\ne6P6nWJ+1YNGMI+Wh6cqixenp9ni34mhDzK/yzf/HvONXiog/kXNUiYEDJGhV+Oo\nmDEK2o6wpEEcy/in9y0nkIuvX27lGlU/Zm8In3FFAQKBgQDcyttUFI27BveAv716\nu+w+kojJ+8x7mF94lEvo/4FuZwg2K9F8lJ/tYxqSlWa7WRWhX5yCcEdeHrozQbSZ\nxMyCmJiYTE/b+5kHDHtMjgJPy49DLkLsXmtiIB8mMIzIGxr3/9fhkzQu1H85RyFt\naUUqmdUQxNYLLCIVyL5aMZVCSwKBgQC8/2wVNCVEtxyTIck3P/XiYEyEx8tR6fd1\nwbWlRm1MedzWIebL7Rreif98bxX/fzdaK/cCq5azxHCGN5Mf/Oj6N6BQEYVjjc3q\nHzHvOUCKsHX11ftZnSk0SOMhUIakrgMPqllqb+CNvNMSc2DAlmTb2TeDMWyZiwf/\nwQHGURDRAQKBgC8fME4ykMkgxIP66BKgttvn5D/PeKXMMFwIsmbI2TPZ03vUQEJp\nafR9GTe9oQ5NBfvJ7xo7ok+pGS5FUKkcwlUBAlhGuSiG+vLxLAN7r2yeUjYRUoEl\n6Z8ood1BsVonxsq1FLr08scn3Ps5fh3ewL9F055flBsQUTn6/P085dEfAoGARL3u\ndQPjbkvf09AdHMBh0bXO/xigZingPO94/yVPidplLWllRdT2yeyNhZft+2EtI9oL\n3OfGR5pyhw7dr2vQ3XmwEI9e4efo9nfkNKuxQwCN1x2+b0jPfNnp6uscHffA20jN\nfv40QbllWDepAENzaddm7ovigTJldWuhFp3TrQECgYEAn8I+1ULSaDZ/7+ZkFSVZ\n0IICzlieBwCnGzFGzRKMm7V8SRHFnHc+iOeuhHBo4gcKSSkOmeoqLipxq+gr1FTA\n9vOzYQgyTP1mRu5mcHptpBG3huMoflV2BxVgHBEVJU0C4dIKeBgo8H4jvhFHgGM/\njO1RqJDBAKHWvOvoYS5yc4Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bot-636@itunes-bot.iam.gserviceaccount.com",
+  "client_id": "113399140660049192927",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bot-636%40itunes-bot.iam.gserviceaccount.com"
+}
