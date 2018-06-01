@@ -21,7 +21,7 @@ def parse(url):
     scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
     credentials = SignedJwtAssertionCredentials(json_key['client_email'], json_key['private_key'].encode(), scope) # get email and key from creds
     gc = gspread.authorize(credentials) 
-    sheet = gc.open("Copie de ARKit Titles") 
+    sheet = gc.open("ARKit Titles") 
     import_sheet = sheet.worksheet('Import')
     #all_cells = import_sheet.range('A1:A5')
     all_cells2 = len(import_sheet.col_values(1))
