@@ -25,7 +25,7 @@ def parse(url):
     import_sheet = sheet.worksheet('Import')
     #all_cells = import_sheet.range('A1:A5')
     all_cells2 = len(import_sheet.col_values(1))
-    all_cells = import_sheet.range('A2:A{}'.format(all_cells2))
+    all_cells = import_sheet.range('A3:A{}'.format(all_cells2))
     for cells in range(len(all_cells)):
         r = requests.get(all_cells[cells].value)
         h = html.fromstring(r.text)
