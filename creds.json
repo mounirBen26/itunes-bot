@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "itune-store-bot",
+  "private_key_id": "276d43dfe672c1fd6e812db9df224acf3439e233",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDWWHNWmxDL8dCK\nQLL4/kL9GsPOyqmNUr+uwmxlAXWCY8DEWzb5Q/elm2TnQ80L8eddK0tTuxi+s48+\nJg6Ww9gWJZzQJm+tjU1zoQVMVtTurke8xmAlWoi2KgRYrhoVF6XYg1N4EZK5jSj2\nfxAzMk6mczkbQ7Skh5HHFi4Qo5n2IDAYLtEQ2tCGMljIgOL95nv4jJqPBvUyOAul\nuKe9fL5yq3Yul5bIFbDBxAoZkbhfUqujDIyjY7nmou7wGK2VxAVV6QvjzsplZ/qQ\nrpcW1FFROAnAD/1wSUQuVKPB0yHv7rcxBjSygrfljefkrgzs4f2fbnkEp7w8Kp4Y\nl3zWBVclAgMBAAECggEASICywuDA1bt95sXrw/19e0/KW/CBWaRb4ikxsRjFPs2v\nLrwL5FTxN7tQbkmo2hmBQSqb2D65KAhks4j79lNYjGU8ncviirn5MNuOhzv32qRo\n75nKe9gb1kJwJe7+M5RELPB/E2YeU1VEPdzNBgRGRldDQc2tFNomnUkLW+V69p1e\nJc3Jbg5cHtEdHvZkgzH8+esMTRa5jjpf7yRevNQy5DtXnDG5pSOCw96ik6eLFZ4g\nu1i/5c4dtM49QhYrE4R6tJMrzHxcvfvCfZSKfkViKag1usQrrCzEv+U/nY/87EBy\nZcrUDCz7giOC08Beo/1Bmw3wQiHpLpLgQf7ANGG0IQKBgQDvHHntiumRKYPfqQVe\ndoeBroV/6ElwrI4k9wGbf8z2KmgPCPhjvYtVkuCjQrLq8nYZmstMOsJibEHCzNPw\nKMhwOuqM3QiUEQXJGV5h18GWhTsmBF4635J7tj6nCeOqjtPW3HCt7wzvAk6DANuL\nRuMeVEG91kv0S5QYo/49++2howKBgQDlfCtV8cIyvOL+th9eikCUtmVD8i8q2d+w\nzeQ/r5Bf4bxiKdsutlFbAWsiQ05rKPG+6h7BHkhtJ6YpFdVDdR4ntXywu9kLb4oB\ngKfJ3K8iGEVTq4FGlH8oCL0Gkj8qjt27lNLxBKwcagyd/h1+6z1aQUt1D0q+ayL1\n7LYLW2kAlwKBgC+WWEHJWrC0NXWm2tWw+0j45cLOBQeyn9uFeUFsTutTB0CuxVh8\nWaWfRKvZU2hk9tIjt4AlVZhm+TN+tlNemn2TjCiauOFW/fLG5LzORs3hGCN5zRMk\nea+7Vn7B/hhssoZZeudy4v0SVXPHEOqIIh1gIXFZm+YzwHai9K97WxDHAoGBAIXD\n2BrTvggHNCWWkThxS+2jV+nALKBEuW/8w7QfqP9KvJ1Xmoxi948dh45EP1yVVDyd\niWm2Ni9yMhe2w0X76aTp1BHMnVpeHMp9bNBsk6VDEn4P9V3nxyrV1SEUdD9hYXwq\n5r5Yo944LryVWCoYAv4uG0bTsBTIrGs/HGoIUW9nAoGBAN8i6bJ6Qg6kSQCXc1YY\naeGhNB5R7CSVpN7GwhbaaLa8rZUggbUoz1zNt+GjOXi9zm7FEVI5uH5kXbG+Ms/J\nck9bLi2kka3JkMvFXL7GID3DHEgp6IfK0cPIpfWq1ukGJ8CV60jx6vYg/oY0YRdY\n1ozy7m4+3eY+JC/j2wyXHjl4\n-----END PRIVATE KEY-----\n",
+  "client_email": "itune-store-data-collection@itune-store-bot.iam.gserviceaccount.com",
+  "client_id": "112945437988872020899",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/itune-store-data-collection%40itune-store-bot.iam.gserviceaccount.com"
+}
