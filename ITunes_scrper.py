@@ -32,7 +32,7 @@ def parse(url):
         else:
             category= category_bis
         
-        print('p ', category)
+        #print('p ', category)
         publisher = h.xpath('//h2[@class="product-header__identity product-header__identity--app-header product-header__identity--spaced"]/a/text()')
         #print 'p',publisher
         rating = h.xpath('//figcaption[@class="we-rating-count star-rating__count"]/text()')
@@ -42,21 +42,21 @@ def parse(url):
         #print 'o',of_rating
         reviews = "".join(h.xpath('//div[@class="we-clamp we-clamp--lines-6 ember-view"]/span/text()'))
         version = "".join(h.xpath('//p[@class="l-column small-6 medium-12 whats-new__latest__version"]/text()'))
-        #print 've',version
+        time.sleep(12)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+1, "".join(category))
-        time.sleep(10)
+        time.sleep(2)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+2, "".join(publisher))
-        time.sleep(10)
+        time.sleep(2)
         #import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+3, "".join(rating))
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+3, "".join(star_rating))
-        time.sleep(10)
+        time.sleep(2)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+4, "".join(of_rating))
-        time.sleep(10)
+        time.sleep(2)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+5, "".join(version))
-        time.sleep(10)
+        time.sleep(2)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+6, "".join(reviews))
-        time.sleep(10)
-        print('DONE!')
+        print('updating done!')
         
 parse(main_url)
+print('work finished!')
     
