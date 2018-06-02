@@ -9,12 +9,6 @@ import time
 main_url = "https://itunes.apple.com/us/app/blocker-by-afternow/id1256222832"
 
 
-
-
-
-
-
-
 #The Scraper Part.
 def parse(url):
     #The Google gspread part
@@ -28,7 +22,6 @@ def parse(url):
     all_cells2 = len(import_sheet.col_values(1))
     all_cells = import_sheet.range('A3:A{}'.format(all_cells2))
     for cells in range(len(all_cells)):
-        time.sleep(20)
         r = requests.get(all_cells[cells].value)
         h = html.fromstring(r.text)
         #title = h.xpath('//h1[@class="product-header__title product-header__title--app-header"]/text()')
@@ -50,43 +43,20 @@ def parse(url):
         reviews = "".join(h.xpath('//div[@class="we-clamp we-clamp--lines-6 ember-view"]/span/text()'))
         version = "".join(h.xpath('//p[@class="l-column small-6 medium-12 whats-new__latest__version"]/text()'))
         #print 've',version
-        
-        
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+1, "".join(category))
-        time.sleep(20)
+        time.sleep(10)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+2, "".join(publisher))
-        time.sleep(20)
+        time.sleep(10)
         #import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+3, "".join(rating))
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+3, "".join(star_rating))
-        time.sleep(20)
+        time.sleep(10)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+4, "".join(of_rating))
-        time.sleep(20)
+        time.sleep(10)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+5, "".join(version))
-        time.sleep(20)
+        time.sleep(10)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+6, "".join(reviews))
-        time.sleep(20)
+        time.sleep(10)
         print('DONE!')
-        #print type(all_cells[cells]),all_cells[cells].row,all_cells[cells].col,all_cells[cells].value
-    #print 't1',type(all_cells)," t2 ",type(all_cells2)
-    #for cells in range(len(all_cells)):
-    #  print type(all_cells[cells]), all_cells[cells].row,all_cells[cells].col
-        #import_sheet.update_cell(all_cells2[cells].row+1,all_cells2[cells].col+1, 'Techs')
         
-    
-
-    """
-    r = requests.get(url)
-    h = html.fromstring(r.text)
-    name = h.xpath('//h1[@class="product-header__title product-header__title--app-header"]/text()')
-    category = h.xpath('//dd[@class="information-list__item__definition l-column medium-9 large-10"]/a/text()')
-    publisher = h.xpath('//h2[@class="product-header__identity product-header__identity--app-header product-header__identity--spaced"]/a/text()')
-    rating = h.xpath('//figcaption[@class="we-rating-count star-rating__count"]/text()')
-    star_rating = "---","".join(rating).split(',')[0]
-    of_rating = "---","".join(rating).split(',')[-1]
-    reviews = "".join(h.xpath('//div[@class="we-clamp we-clamp--lines-6 ember-view"]/span/text()'))
-    version = "".join(h.xpath('//p[@class="l-column small-6 medium-12 whats-new__latest__version"]/text()'))
-    print "".join(name).strip(),"-----", "".join(category),"---","".join(publisher),"---",star_rating,"---",of_rating,"********",reviews,"------",version
-    return h
-    """
 parse(main_url)
     
