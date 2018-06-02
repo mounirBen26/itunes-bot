@@ -42,7 +42,7 @@ def parse(url):
         #print 'o',of_rating
         reviews = "".join(h.xpath('//div[@class="we-clamp we-clamp--lines-6 ember-view"]/span/text()'))
         version = "".join(h.xpath('//p[@class="l-column small-6 medium-12 whats-new__latest__version"]/text()'))
-        time.sleep(12)
+        time.sleep(10)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+1, "".join(category))
         time.sleep(2)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+2, "".join(publisher))
