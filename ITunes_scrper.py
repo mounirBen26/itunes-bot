@@ -4,6 +4,7 @@ import re
 import gspread
 import json
 from oauth2client.client import SignedJwtAssertionCredentials
+import time
 
 main_url = "https://itunes.apple.com/us/app/blocker-by-afternow/id1256222832"
 
@@ -27,6 +28,7 @@ def parse(url):
     all_cells2 = len(import_sheet.col_values(1))
     all_cells = import_sheet.range('A3:A{}'.format(all_cells2))
     for cells in range(len(all_cells)):
+        time.sleep(20)
         r = requests.get(all_cells[cells].value)
         h = html.fromstring(r.text)
         #title = h.xpath('//h1[@class="product-header__title product-header__title--app-header"]/text()')
@@ -51,13 +53,18 @@ def parse(url):
         
         
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+1, "".join(category))
-        
+        time.sleep(20)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+2, "".join(publisher))
+        time.sleep(20)
         #import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+3, "".join(rating))
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+3, "".join(star_rating))
+        time.sleep(20)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+4, "".join(of_rating))
+        time.sleep(20)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+5, "".join(version))
+        time.sleep(20)
         import_sheet.update_cell(all_cells[cells].row,all_cells[cells].col+6, "".join(reviews))
+        time.sleep(20)
         print('DONE!')
         #print type(all_cells[cells]),all_cells[cells].row,all_cells[cells].col,all_cells[cells].value
     #print 't1',type(all_cells)," t2 ",type(all_cells2)
